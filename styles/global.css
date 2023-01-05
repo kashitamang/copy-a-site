@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: var(--primary-font);
+    font-family: Poppins, sans-serif;
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
@@ -16,20 +16,114 @@ header {
     position: sticky;
     top: 0;
     padding: 15px;
-    height: 80px;
-
+    height: 162px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
-
-    background-color: var(--header-background);
+    background-color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-header .logo {
-    height: 100%;
+header .top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    height: 81px;
+    border-bottom: 1px solid #dde1e6;
 }
 
+header .bottom-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 16px;
+    height: 81px;
+}
+
+.top-header-links-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-header-links-left p {
+    margin: 0px 20px 0px 13px;
+}
+
+.bottom-header-links-left a {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.bottom-header-links-right {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.bottom-header-links-right div {
+    width: 83px;
+}
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/background.webp);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 96px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+}
+
+.title p {
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+.title button {
+    background-color: white;
+    border: none;
+    padding: 14px 36px;
+    font: 16px;
+    color: #4d2c57;
+    cursor: pointer;
+}
+
+header button {
+    background-color: #583bb6;
+    border-color: #583bb6;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 24px;
+    border-width: 0;
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    overflow: hidden;
+    font-weight: 500;
+    line-height: 1.67;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.188em;
+    cursor: pointer;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
 }
