@@ -16,7 +16,7 @@ header {
     position: sticky;
     top: 0;
     padding: 15px;
-    height: 100px;
+    height: 162px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -30,12 +30,16 @@ header .top-header {
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px 0px 30px;
+    height: 81px;
+    border-bottom: 1px solid #dde1e6;
 }
 
 header .bottom-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 24px 16px;
+    height: 81px;
 }
 
 .top-header-links-left {
@@ -80,7 +84,7 @@ main {
 }
 
 .title h1 {
-    font-size: 58px;
+    font-size: 96px;
     color: white;
     font-weight: 400;
     letter-spacing: 0.25rem;
